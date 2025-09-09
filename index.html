@@ -3,33 +3,41 @@
 <html>
 
 <head>
+    <link rel="stylesheet" href="style.css">
     <title>Exercicio 1 front</title>
 </head>
 
 <body>
     <header>
-        <h1>Leonardo Victor Muller de Morais</h1>
-        <img src="img/perfil.png" alt="Minha foto" height="120px" width="90px">
+        
+        <div id="primeiro"><div id="foto"><img  src="img/perfil.png" alt="Minha foto" height="120px" width="90px"></div><h1>Leonardo Victor Muller de Morais</h1></div>
         <p>Sou estudante do <strong>IFSC</strong> no curso de <em>Analise e desenvolvimento de sistemas</em>, trabalho na Intelbras na area de Redes empresariais fazedo reteadores grandes para as empresas</p>
         
     </header>
 
     <section>
         <article>
-            <h2>Meus hobbies</h2>
-            <ol>
-                <li>Jogar</li><a href="https://br.pinterest.com/monkreaper/valorant/" ><img src="img/icon/controle-de-jogo.png" alt="Icone de jogar" height="30px" width="30px"></a>
-                <li>Ouvir musica</li><a href = "https://br.pinterest.com/casioteclados/m%C3%BAsica-para-ouvir-m%C3%BAsica/" ><img src="img/icon/fones-de-ouvido-musica.png" alt="Icone de Ouvir musica" height="30px" width="30px"></a>
-                <li>Séries</li><a href="https://br.pinterest.com/guimares1345/series-para-assistir/"><img src="img/icon/filme.png" alt="Icone de assistir serie" height="30px" width="30px"></a>
-            </ol>
-        </article>
-        <article>
-            <h2>Habilidades que desejo desenvolver no futuro</h2>
-            <ul>
-                <li>Reacte</li><a href="https://br.pinterest.com/pixelisart/reactjs/"><img src="img/icon/reacte.png" alt="Icone de reacte" height="30px" width="30px"></a>
-                <li>Ingles</li><a href="https://br.pinterest.com/daisymacastro/dicas-ingl%C3%AAs/"><img src="img/icon/eng.png" alt="Icone de Ingles" height="30px" width="30px"></a>
-                <li>Flutter</li><a href="https://br.pinterest.com/ulissesms_work/app-flutter/"><img src="img/icon/flute.png" alt="Icone de flute" height="30px" width="30px"></a>
-            </ul>
+        <h2>Meus hobbies</h2>
+        <ul class="hobbies">
+            <li>
+            <a href="https://br.pinterest.com/monkreaper/valorant/" target="_blank">
+                <img src="img/icon/controle-de-jogo.png" alt="Ícone de jogar">
+                Jogar
+            </a>
+            </li>
+            <li>
+            <a href="https://br.pinterest.com/casioteclados/m%C3%BAsica-para-ouvir-m%C3%BAsica/" target="_blank">
+                <img src="img/icon/fones-de-ouvido-musica.png" alt="Ícone de ouvir música">
+                Ouvir música
+            </a>
+            </li>
+            <li>
+            <a href="https://br.pinterest.com/guimares1345/series-para-assistir/" target="_blank">
+                <img src="img/icon/filme.png" alt="Ícone de séries">
+                Séries
+            </a>
+            </li>
+        </ul>
         </article>
         <article>
             <h2>Informações pessoais</h2>
@@ -48,7 +56,7 @@
                 <dd><a href="https://www.youtube.com/watch?v=-Ti1b-RRBjI&list=RD-Ti1b-RRBjI&start_radio=1">Rumours</a></dd>
             </dl>
             <h3>Horarios</h3>
-        <table border="1">
+        <table border="1" >
         <caption>Tabela dos meus Horarios</caption>
         <thead>
             <tr>
@@ -107,7 +115,7 @@
             </tr>
         </tbody>
     </table>
-    <table border="1">
+    <table border="1" id="voos">
     <caption>Tabela dos voos</caption>
     <thead>
         <tr>
@@ -217,9 +225,14 @@
         </tr>
     </tbody>
 </table>
+<div id="audio">
+    <p>
+        <h3>More Fun To Miss</</h3><h3>Daisy Jones & The Six</h3>
+    </p>
+    <p><audio id="musica" controls preload="auto">
+<source src="audio/Daisy Jones & The Six - More Fun To Miss (Official Audio) [gCiZOuCY3TU].mp3"></audio></p>
+    </div>
 
-    <audio id="musica" controls preload="auto">
-<source src="audio/Daisy Jones & The Six - More Fun To Miss (Official Audio) [gCiZOuCY3TU].mp3"></audio>
 </article>
         <h3><a href="formulario.html">Formulario</a></h3>
     </section>
