@@ -1,5 +1,6 @@
+* { box-sizing: border-box; }
 body{
-    background-color: #cd966c; 
+    background-color: #dac1ae; 
 }
 #primeiro {
     display: flex;
@@ -23,8 +24,13 @@ body{
     flex-wrap: wrap; /* Permite quebrar linha se não couber */
     gap: 20px;        /* Espaço entre os itens */
     list-style: none; /* Remove marcadores de lista */
-    padding: 0;
-    margin: 0;
+    background-color: #742b2b;
+    border: 2px ;
+    padding: 20px;
+    margin: 30px;
+    height: 100px ;
+    width: 80%;
+    overflow: auto ;
 }
 
 .hobbies li {
@@ -49,6 +55,19 @@ body{
     height: 30px;
     width: 30px;
 }
+
+.secao-voo{
+    background-color: #742b2b;
+    border: 2px ;
+    padding: 20px;
+    margin: 30px;
+    overflow: auto ;
+}
+
+td#voos{
+    background-color: #dac1ae;
+}
+
 #audio {
     width: 300px;                     
     margin: 20px auto;              
@@ -57,12 +76,11 @@ body{
     padding: 10px;                  
     border-radius: 8px;             
 }
-#voos{
-    color: beige; 
+#voos{ 
     width: 300px;                     
     margin: 20px auto;              
     text-align: center;              
-    background-color: #704214;      
+    background-color: #886039;      
     padding: 10px;                  
     border-radius: 8px;   
 }
