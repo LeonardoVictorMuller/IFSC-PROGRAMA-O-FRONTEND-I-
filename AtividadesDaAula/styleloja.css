@@ -1,0 +1,93 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f9f9f9;
+  color: #333;
+}
+
+/* Botão da index */
+.btn-loja {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #00723f;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin: 20px;
+}
+.btn-loja:hover {
+  background: #00994d;
+}
+
+/* Header fixo */
+header {
+  /* Propriedades originais (mantidas) */
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #00723f;
+  color: #fff;
+  padding: 10px 20px; /* Ajuste no padding para melhor visual */
+  z-index: 1000;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+
+  /* Propriedades adicionadas para alinhamento */
+  justify-content: space-between; /* Espaça os itens ao máximo */
+  align-items: center; /* Centraliza os itens verticalmente */
+}
+
+/* Remove o sublinhado padrão do link */
+header a {
+  text-decoration: none;
+}
+
+/* Estilo para a imagem, movido do HTML para cá */
+.link-sair img {
+  height: 45px;
+  width: 45px;
+  display: block; /* Remove espaço extra abaixo da imagem */
+}
+
+/* Grid de produtos */
+main {
+  padding: 100px 20px 20px; /* espaço pro header */
+}
+
+.grid-produtos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.produto {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+.produto:hover {
+  transform: scale(1.05);
+}
+.produto img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+.produto h2 {
+  font-size: 16px;
+  margin: 10px 0;
+}
+.produto p {
+  font-size: 14px;
+  color: #00723f;
+  font-weight: bold;
+}
