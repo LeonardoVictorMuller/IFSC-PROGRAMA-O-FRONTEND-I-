@@ -1,10 +1,25 @@
 * { box-sizing: border-box; }
 
-@media screen and (orientation: landscape) {
+/* @media screen and (orientation: landscape) {
 body { background-color: coral; }
 }
 @media screen and (orientation: portrait) {
 body { background-color: skyblue; }
+} */
+
+
+@media screen and (orientation: portrait) {
+    #Horarios td {
+        font-size:30px;
+    }
+    #Horarios th {
+        font-size:30px;
+    }
+}
+
+@media (max-width: 800px) {
+    
+
 }
 
 body{
@@ -12,13 +27,15 @@ body{
 }
 #primeiro {
     display: flex;
-    align-items: center; /* Alinha verticalmente ao centro */
+    align-items: center;
     gap: 10px; 
+    flex-wrap: wrap;
 }
 #foto {
     background-color: #66280a;
     padding: 5px;
     border-radius: 8px;
+    flex: 0 1 120px;
 }
 
 #foto img {
@@ -29,14 +46,15 @@ body{
 
 .hobbies {
     display: flex;
-    flex-wrap: wrap; /* Permite quebrar linha se não couber */
-    gap: 20px;        /* Espaço entre os itens */
-    list-style: none; /* Remove marcadores de lista */
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style: none;
     background-color: #742b2b;
-    border: 2px ;
+    border: 2px;
     padding: 20px;
     margin: 30px;
-    overflow: auto ;
+    overflow: auto;
+    justify-content: center;
 }
 
 .hobbies li {
@@ -46,6 +64,7 @@ body{
     background-color: rgba(255, 255, 255, 0.1);
     padding: 10px 15px;
     border-radius: 8px;
+    flex: 1 1 150px;
 }
 
 .hobbies a {
@@ -71,10 +90,10 @@ body{
 
 .secao-voo{
     background-color: #742b2b;
-    border: 2px ;
+    border: 2px;
     padding: 20px;
     margin: 30px;
-    overflow: auto ;
+    overflow: auto;
 }
 
 #voos > tbody > tr > td {
@@ -84,24 +103,25 @@ body{
 #voos > tbody > tr > td:hover {
     background-color: rgba(255, 255, 255, 0.1);
     border: 2px dotted #663;
-
 }
 
 #audio {
-    width: 300px;                     
-    margin: 20px auto;              
-    text-align: center;              
-    background-color: #874421;      
-    padding: 10px;                  
-    border-radius: 8px;             
+    width: 90%;
+    max-width: 300px;
+    margin: 20px auto;
+    text-align: center;
+    background-color: #874421;
+    padding: 10px;
+    border-radius: 8px;
 }
 #voos{ 
-    width: 300px;                     
-    margin: 20px auto;              
-    text-align: center;              
-    background-color: #886039;      
-    padding: 10px;                  
-    border-radius: 8px;   
+    width: 90%;
+    max-width: 400px;
+    margin: 20px auto;
+    text-align: center;
+    background-color: #886039;
+    padding: 10px;
+    border-radius: 8px;
 }
 
 #conteiner{
@@ -113,15 +133,18 @@ body{
 }
 #conteiner > article{
     text-align: center;
-    width: 32%;
+    flex: 1 1 280px;
+    max-width: 32%;
 }
 #ListaFotos{
     display: flex;
     flex-wrap: wrap; 
+    justify-content: center;
 }
 #ListaFotos > img{
     margin: 0.5em;
-    width: 28%;
+    flex: 1 1 150px;
+    max-width: 30%;
     height: auto;
 }
 #conteiner > article > ul,
