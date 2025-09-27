@@ -24,6 +24,8 @@ body { background-color: skyblue; }
 
 body{
     background-color: #dac1ae; 
+    align-items: center;
+    padding: 20px;
 }
 #primeiro {
     display: flex;
@@ -35,7 +37,6 @@ body{
     background-color: #66280a;
     padding: 5px;
     border-radius: 8px;
-    flex: 0 1 120px;
 }
 
 #foto img {
@@ -107,7 +108,7 @@ body{
 
 #audio {
     width: 90%;
-    max-width: 300px;
+    max-width: 340px;
     margin: 20px auto;
     text-align: center;
     background-color: #874421;
@@ -135,6 +136,9 @@ body{
     text-align: center;
     flex: 1 1 280px;
     max-width: 32%;
+    margin: 10px;
+    background-color:#886039 ;
+    border-radius: 8px;
 }
 #ListaFotos{
     display: flex;
@@ -144,11 +148,22 @@ body{
 #ListaFotos > img{
     margin: 0.5em;
     flex: 1 1 150px;
-    max-width: 30%;
+    max-width: 15%;
     height: auto;
 }
 #conteiner > article > ul,
 #conteiner > article > ol {
     text-align: left;
     margin-top: 1em;
+}
+footer {
+    background-color: #742b2b;
+    color: white;
+    text-align: center;
+    margin: -30px;
+    display: flex;
+}
+footer div {
+    flex: 1;
+    padding: 10px;
 }
