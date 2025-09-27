@@ -156,11 +156,14 @@ body{
     text-align: left;
     margin-top: 1em;
 }
+#loja{
+    margin-bottom: 15%;
+}
 footer {
     background-color: #742b2b;
     color: white;
     text-align: center;
-    margin: -30px;
+    margin: -10%;
     display: flex;
 }
 footer div {
